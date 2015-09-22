@@ -1,9 +1,9 @@
-<%= render 'pages/home' unless user_signed_in? %>
+<%= render'pages/home' unless user_signed_in? %>
 
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
 
-    <div class="box panel  panel-default">
+    <div class="box panel panel-default">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
       <div class="panel-body">
         <p><%= pin.description %></p>
@@ -24,6 +24,12 @@
     </div>
   <% end %>
 </div>
+
+<% if user_signed_in? %>
+   <%= link_to new_pin_path do %>
+            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> New Pin</button>
+      <% end %>
+      <% end %>
 
 <div class="center">
   <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
