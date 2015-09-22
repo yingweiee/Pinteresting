@@ -17,4 +17,5 @@
 //= require turbolinks
 //= require masonry/jquery.masonry
 //= require bootstrap/modal
+//= require owl.carousel
 //= require_tree .
