@@ -3,8 +3,8 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
-$body-bg: #ecf0f1;
-$font-family-sans-serif: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-bg: #F5F5F5;
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-weight: 400;
 $navbar-height: 50px;
 $navbar-default-bg: white;
@@ -12,6 +12,7 @@ $navbar-default-brand-color: #16d656;
 $navbar-static-top-margin-bottom: 0px;
 $brand-primary: #16d656;
 
+@import 'bootstrap-sprockets';
 @import 'bootstrap';
 
 body {
@@ -56,11 +57,50 @@ body {
 
 .jumbotron h1 {
     font-size: 45px;
-    margin-bottom: 20px;
-    font-weight: 300;    
+    font-weight: 100;    
 }
 
-.jumbotron h2 {
-    font-size: 32px;
-    font-weight: 300;
+.jumbotron h4 {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
+.jumbotron .btn {
+  border-radius: 0px;
+  border-style: none;
+  padding: 10px 20px;
+  margin: auto 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.create-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+.create-button .btn {
+  border-radius: 50%;
+  border-style: none;
+  width: 35px;
+  height: 35px;
+  font-size: 10px;
+  background-color: #0F9CFA;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.create-button .btn:hover {
+  background-color: #0B71B5;
+  transition: background-color 0.2s ease;
+}
+
+a.like:hover {
+  text-decoration: none;
+}
+

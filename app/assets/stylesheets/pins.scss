@@ -7,10 +7,36 @@
 }
 
 .box {
-	margin: 5px;
-	width: 214px;
+	margin: 10px;
+	width: 250px;
+	border-style: none;
+	border-radius: none;
+	box-shadow: none;
 }
 
 .box img {
 	width: 100%;
+}
+
+#pins .panel-body {
+	padding: 10px 0 10px 10px;
+}
+
+#pins .panel-body p {
+	display: inline;
+}
+
+#pins .panel-footer {
+	padding: 5px 0 10px 10px;	
+	background-color: none;
+}
+
+#pins .actions {
+	display: inline;
+}
+
+#pins .like-button {
+	display: inline;
+	float: right;
+	margin-right: 10px;
 }

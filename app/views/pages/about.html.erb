@@ -1,2 +1,20 @@
 <h1>About Us</h1>
 <p>This is our One-Month Rails program!</p>
+
+<% @links.each do |link| %>
+    <h4><%= link_to link.title, link %><br>
+      Submitted <%= time_ago_in_words(link.created_at) %> 
+      by <%= link.user.email %>
+    </h4>
+
+    <%= link_to like_link_path(link), method: :put do %>
+  Upvote
+  <%= link.get_upvotes.size %>
+<% end %>
+
+<%= link_to dislike_link_path(link), method: :put do %>
+  Downvote
+  <%= link.get_downvotes.size %>
+<% end %>
+
+<% end %>

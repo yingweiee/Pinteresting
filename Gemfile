@@ -19,6 +19,14 @@ gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 gem 'owlcarousel-rails'
+gem 'papercrop'
+gem 'acts_as_votable'
+gem 'thumbs_up'
+
+group :assets do
+  gem 'jquery-ui-rails'
+  gem 'jquery-modal-rails'
+end
 
 group :development, :test do
 	gem 'sqlite3'
